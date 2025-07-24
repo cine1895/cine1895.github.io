@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+{% include head.html %}
+
+<body>
+{% include header.html %}
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.slogan }}</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="cont">
+      <h2>Последние фильмы:</h2>
+
+      <ul class="film-list">
+        {% for post in site.posts %}
+        <li class="film-list_item">
+          <img
+            src="/uploads/{{ post.index }}-p.webp"
+            alt="Постер фильма {{ post.title }}"
+            class="film-list_poster">
+
+          <a href="{{ post.url }}">
+            <h3>{{ post.title }}</h3>
+          </a>
+
+          {{ post.genre }} • {{ post.country }} • {{ post.year }} г.<br>
+          Режиссер: {{ post.director }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </main>
+
+  {% include footer.html %}
+
+</body>
+</html>

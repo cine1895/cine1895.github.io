@@ -1,0 +1,5 @@
+source      : ./_src
+destination : ./_dist
+safe        : true
+title       : "Синематографъ"
+slogan      : "Тёплое ламповое кино"

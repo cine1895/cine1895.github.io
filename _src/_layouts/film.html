@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="film-hero">
+      <img
+        src="/uploads/{{ page.index }}-b.webp"
+        alt=""
+        class="film-hero_img"
+      />
+      <div class="film-hero_overlay"></div>
+      <div class="film-hero_title">{{ page.title }}</div>
+    </div>
+
+    <main>
+      <div class="cont film">
+        <img
+          src="/uploads/{{ page.index }}-p.webp"
+          alt="Постер фильма {{ page.title }}"
+          class="film_poster"
+        />
+        <h2 class="film-title">{{ page.title }} ({{ page.year }})</h2>
+
+        {{ content }}
+
+        <h1>Смотреть {{ page.title }} ({{ page.year }})</h1>
+
+        <div class="film-video ratio-{{ page.ratio }}">
+            <iframe src="https://vk.com/video_ext.php?oid=-179574606&id={{ page.videoid }}&hd=3&autoplay=1" class="responsive-iframe" width="1280" height="720" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

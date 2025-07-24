@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-lg">
+    <a class="navbar-brand" href="/">{{ site.title | capitalize }}</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+
+        {% if page.url != "/" %}
+        <a class="nav-link" href="/">На главную</a>
+        {% endif %}
+
+
+        {% if page.url == "/films.html" %}
+        <a class="nav-link active" aria-current="page" href="/films.html">Фильмы</a>
+        {% else %}
+        <a class="nav-link" href="/films.html">Фильмы</a>
+        {% endif %}
+
+        {% comment %}
+        {% if page.url == "/directors.html" %}
+        <a class="nav-link active" aria-current="page" href="/directors.html">Режиссёры</a>
+        {% else %}
+        <a class="nav-link" href="/directors.html">Режиссёры</a>
+        {% endif %}
+        {% endcomment %}
+
+
+        {% if page.url == "/about.html" %}
+        <a class="nav-link active" aria-current="page" href="/about.html">О сайте</a>
+        {% else %}
+        <a class="nav-link" href="/about.html">О сайте</a>
+        {% endif %}
+
+        <a class="nav-link text-end" href="/about.html">Telegram</a>
+
+
+      </div>
+    </div>
+  </div>
+</nav>

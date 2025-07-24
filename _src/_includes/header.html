@@ -1,0 +1,28 @@
+<header>
+  <div class="cont">
+    <a class="logo" href="/">{{ site.title | capitalize }}</a>
+
+    <nav>
+      <ul class="navigation">
+        {% if page.url == "/films.html" %}
+        <li><a class="nav-link active" aria-current="page" href="/films.html">Фильмы</a></li>
+        {% else %}
+        <li><a class="nav-link" href="/films.html">Фильмы</a></li>
+        {% endif %}
+
+        {% if page.url == "/about.html" %}
+        <li><a class="nav-link active" aria-current="page" href="/about.html">О сайте</a></li>
+        {% else %}
+        <li><a class="nav-link" href="/about.html">О сайте</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+
+    <nav>
+      <ul class="navigation social">
+        <li><a class="nav-link vk" target="_blank" href="https://vk.com/cine1895">VK</a></li>
+        <li><a class="nav-link tg" target="_blank" href="https://t.me/cine1895">Telegram</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+  <main>
+    <div class="cont">
+      <h1 class="text-center">{{ page.title }}</h1>
+
+      {{ content }}
+    </div>
+  </main>
+  {% include footer.html %}
+</body>
+</html>

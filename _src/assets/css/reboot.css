@@ -1,0 +1,60 @@
+* {
+  font-size: 1.1rem;
+}
+
+body {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+.film-title,
+.film-hero_title {
+  font-family: "Cormorant", Georgia, 'Times New Roman', Times, serif;
+  font-optical-sizing: auto;
+  font-weight: 700 !important;
+  font-style: normal;
+    line-height: 1.2;
+} 
+
+h1, .film-hero_title {
+  font-size: 3rem;
+}
+
+h2, .film-title {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+p, h1, h2, h3 { margin-bottom: 1rem }
+
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cont {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}

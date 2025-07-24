@@ -1,0 +1,25 @@
+---
+layout: default
+title: Фильмы
+---
+<main>
+<div class="cont">
+  <ul class="film-list">
+    {% for post in site.posts %}
+    <li class="film-list_item">
+      <img
+        src="/uploads/{{ post.index }}-p.webp"
+        alt="Постер фильма {{ post.title }}"
+        class="film-list_poster">
+
+      <a href="{{ post.url }}">
+        <h3>{{ post.title }}</h3>
+      </a>
+
+      {{ post.genre }} • {{ post.country }} • {{ post.year }} г.<br>
+      Режиссер: {{ post.director }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+</main>
