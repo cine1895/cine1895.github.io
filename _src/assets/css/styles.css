@@ -116,12 +116,13 @@ footer ul a { color: var(--white); }
 }
 .film-hero_title {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   margin: 0;
   line-height: 1;
+  min-width: 100%;
+  text-align: center;
 }
 .film-hero_overlay {
 background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
