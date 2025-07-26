@@ -2,6 +2,7 @@
 layout: film
 index: '01'
 videoid: '456243348'
+videometa: 'Качество 1080p, русские субтитры'
 ratio: '16x9'
 title: Двадцать дней без войны
 director: Алексей Герман
