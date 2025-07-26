@@ -136,8 +136,8 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
   height: auto;
 }
 
-.film table tr td:last-child {
-    padding-left: 1rem
+.film table tr td:first-child {
+    width: 180px
 }
 
 .film ul {
