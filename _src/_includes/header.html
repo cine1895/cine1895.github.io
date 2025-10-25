@@ -1,4 +1,9 @@
-<header>
+{% if classname %}
+  <header class="filmpage">
+{% else %}
+  <header>
+{% endif %}
+
   <div class="cont">
     <a class="logo" href="/">{{ site.title | capitalize }}</a>
 

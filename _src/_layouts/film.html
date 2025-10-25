@@ -3,6 +3,8 @@
   {% include head.html %}
 
   <body>
+    {% comment %} {% include header.html %} {% endcomment %}
+   {% capture classname %}{{ filmpage }}{% endcapture %}
     {% include header.html %}
 
     <div class="film-hero">
@@ -12,7 +14,7 @@
         class="film-hero_img"
       />
       <div class="film-hero_overlay"></div>
-      <div class="film-hero_title">{{ page.title }}</div>
+      <h1 class="film-hero_title">{{ page.title }}</h1>
     </div>
 
     <main>
@@ -22,16 +24,8 @@
           alt="Постер фильма {{ page.title }}"
           class="film_poster"
         />
-        <h2 class="film-title">{{ page.title }} ({{ page.year }})</h2>
-
+         <h2>О фильме:</h2>
         {{ content }}
-
-        <h1>{{ page.title }} ({{ page.year }}) смотреть бесплатно</h1>
-
-        <div class="film-video ratio-{{ page.ratio }}">
-            <iframe src="https://vk.com/video_ext.php?oid=-179574606&id={{ page.videoid }}&hd=3&autoplay=1" class="responsive-iframe" width="1280" height="720" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <p>{{ page.videometa }}</p>
       </div>
     </main>
 
