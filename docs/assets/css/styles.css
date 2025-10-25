@@ -11,7 +11,15 @@
 header {
   background-color: var(--black);
 }
+header.filmpage {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: transparent;
 
+}
 header .cont {
   display: flex;
   flex-flow: row wrap;
@@ -94,7 +102,7 @@ footer {
   background-color: var(--black);
   color: var(--white);
   padding: 2rem 0;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 footer .cont { display: flex; }
 footer .cont div { width: 50%; }
@@ -125,7 +133,7 @@ footer ul a { color: var(--white); }
   text-align: center;
 }
 .film-hero_overlay {
-background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1) );
   position: absolute;
   width: 100%; height: 100%;
   top: 0; left: 0;
@@ -149,9 +157,8 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
-.responsive-iframe {
+.film-video iframe {
     position: absolute;
     top: 0;
     left: 0;
