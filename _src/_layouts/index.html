@@ -18,7 +18,7 @@
       <h2>Последние фильмы:</h2>
 
       <ul class="film-list">
-        {% for post in site.posts %}
+        {% for post in site.posts limit: 3 %}
         <li class="film-list_item">
           <img
             src="/uploads/{{ post.index }}-p.webp"
