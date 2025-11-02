@@ -14,3 +14,9 @@ kramdown:
   hard_wrap         : false
   footnote_nr       : 1
   show_warnings     : false
+
+plugins:
+  - jekyll-seo-tag
+
+whitelist:
+  - jekyll-seo-tag
