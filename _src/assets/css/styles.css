@@ -108,6 +108,7 @@ header .tg {
 
 .film-list_item {
   margin-bottom: 2rem;
+  line-height: 1.7;
 }
 
 .film-list h3 {
@@ -120,7 +121,7 @@ header .tg {
 
 @media (min-width: 767.98px) {
   .film-list_poster {
-    width: 80px;
+    width: 100px;
     float: left;
     margin: 0 1rem 0 0;
   }
