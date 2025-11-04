@@ -4,6 +4,10 @@ safe        : true
 title       : "Синематографъ"
 slogan      : "Тёплое ламповое кино"
 
+locale      : ru_RU
+logo        : '/favicon.png'
+description : "Тёплое ламповое кино"
+
 markdown            : kramdown
 kramdown:
   auto_ids          : true

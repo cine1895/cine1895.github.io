@@ -2,6 +2,8 @@
 layout: film
 index: '05'
 title: Ностальгия
+description: 'Драма • Италия • 1983 г • Режиссер: Андрей Тарковский'
+image: '/uploads/05-b.webp'
 director: Андрей Тарковский
 year: 1983
 country: Италия
