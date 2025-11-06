@@ -50,3 +50,9 @@ image: '/uploads/01-b.webp'
 <div class="film-video ratio-16x9">
   <iframe src="https://vk.com/video_ext.php?oid=-179574606&id=456243348&hd=3&autoplay=0" class="responsive-iframe" width="1280" height="720" allow="encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
 </div>
+
+### Материалы о фильме: 
+
+1. \[Видео] [История одного шедевра. Солодников и Любовь Аркус](https://vkvideo.ru/video-216106193_456239063){:target="_blank"}
+2. \[Текст] [Алексей Герман о фильма. «Здесь всё – вопреки»](https://web.archive.org/web/20250622180403/https://chapaev.media/articles/6894){:target="_blank"}
+3. \[Текст] [Возвращенное время. Загадки фильма «Двадцать дней без войны»](https://web.archive.org/web/20250619184230/https://chapaev.media/articles/3720){:target="_blank"}
